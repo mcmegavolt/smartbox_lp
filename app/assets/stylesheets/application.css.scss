@@ -1,0 +1,31 @@
+/*
+ *= require toastr
+ *= require font-awesome
+ *= require_self
+ *= require_tree .
+*/
+
+// Custom variables
+
+$pink-color: #FB0034;
+$white-color: #FFF;
+
+// Bootstrap overrides
+
+$link-color: lighten(#000, 20%);
+$link-hover-color: $pink-color;
+
+$brand-primary: $pink-color;
+
+$font-size-base: 16px;
+
+$btn-default-color: #FFF;
+$btn-default-bg: $pink-color;
+$btn-default-border: $pink-color;
+
+$border-radius-base: 0px;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin,cyrillic);

@@ -1,0 +1,134 @@
+// Vars
+$pink-color: #FB0034;
+$silver-color: #C0C0C0;
+
+
+// Bootsrap overrides
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+}
+
+h1 {
+	line-height: 1.3;
+}
+
+// Custom
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	&.color-a {
+		background: #F5F5F7;
+	}
+	&.color-b {
+		background: #00B1D0;
+	}
+	&.color-c {
+		background: #F2F2F2;
+	}
+	.text-white {
+		color: #fff;
+	}
+}
+
+.smartcube-is {
+	padding: 50px 0;
+	p {
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+}
+
+.how-put-together {
+	padding: 50px 0;
+}
+
+#main-navbar {
+	padding: 0;
+	ul {
+		li:last-child {
+			a { padding-right: 0;}
+		}
+	}
+}
+
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.top-marged-60 {
+	margin-top: 60px;
+}
+
+.top-marged-30 {
+	margin-top: 30px;
+}
+
+.padded-20-0 {
+	padding: 20px 0;
+}
+
+
+.form {
+	text-align: center;
+	background: white;
+	border-color: $silver-color;
+	border-width: 1px;
+	border-style: solid;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	margin-bottom: 20px;
+	input {
+		padding: 10px 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.color {
+	color: $pink-color;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bigger {
+	font-size: 120%;
+}
+
+.title-1 {
+	font-size: 70px !important;
+}
+
+.title-2 {
+	font-size: 55px !important;
+}
+
+.title-3 {
+	font-size: 30px !important;
+}
+
+.title-4 {
+	font-size: 20px !important;
+}
+
+.title-5 {
+	font-size: 18px !important;
+}
+
+
+// For toastr
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+  width: 96%;
+  margin: auto;
+}

@@ -1,0 +1,29 @@
+- if flash.any?
+  javascript:
+    toastr.options = {
+      "closeButton": false,
+      "debug": true,
+      "positionClass": "toast-top-full-width",
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "3600",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+  - flash.each do |name, msg|
+    - if name == 'success'
+      javascript:
+        toastr.success("#{msg}");
+    - elsif name == 'notice'
+      javascript:
+        toastr.info("#{msg}");
+    - elsif name == 'alert'
+      javascript:
+        toastr.warning("#{msg}");
+    - elsif name == 'error'
+      javascript:
+        toastr.error("#{msg}");

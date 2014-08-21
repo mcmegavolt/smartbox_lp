@@ -1,0 +1,55 @@
+section.header.color-a
+  .container
+		.navbar role="navigation"
+			#main-navbar
+				.navbar-right
+					ul.nav.navbar-nav
+					  li.active
+					  	a href="#top"
+					  		'smartbox
+					  li
+					  	a href="#decors"
+					  		'декори
+					  li
+					  	a href="#how-we-work"
+					  		'як ми працюємо
+					  li
+					  	a href="#contacts"
+					  		'контакти
+		.row
+			.col-xs-6
+				= image_tag 'logo.png', class: 'img-responsive'
+			.col-xs-6.text-right
+				p.uppercase
+					span.title-4 Телефонуйте прямо зараз!
+					br
+					span.title-3 +380 44 353 00 45
+				= link_to 'зворотній зв’язок', '#callback', class: 'btn btn-default'
+		a#callback
+		.row
+			.col-xs-5.top-marged-60
+				h1.uppercase
+					span.color Інтернет-магазин
+					br
+					'модульних систем
+					br
+					'smartbox
+				.form
+					p.text-center.uppercase.title-3.color Заповнити заявку
+					p.text-center.bigger
+						'заповніть форму і ми вам
+						br
+						'зателефонуємо
+					- @order = Order.new
+					= simple_form_for @order, url: orders_path,  html: {class: 'form-vertical' } do |f|
+						- if f.errors.any
+							ul
+								- f.errors.each do |e|
+									li= e
+
+						= f.input :name, placeholder: 'ваше ім’я', label: false
+						= f.input :phone, placeholder: 'ваш телефон', label: false
+	 					= f.input :email, placeholder: 'ваш email', type: 'email', label: false
+						= f.button :submit, 'відправити', class: 'btn btn-default uppercase'
+			.col-xs-7.text-right
+				= image_tag 'girl.jpg', class: 'img-responsive'
