@@ -90,8 +90,8 @@ Smartbox::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'evestudio.com.ua',
-    user_name:            'office@evestudio.com.ua',
-    password:             'OFFAdM1nPa88W0rD',
+    user_name:            'web@evestudio.com.ua',
+    password:             'WeBeVEsTud10Pa88W0rD',
     authentication:       'plain',
     enable_starttls_auto: true  }
 
