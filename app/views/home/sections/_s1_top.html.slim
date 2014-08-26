@@ -23,18 +23,8 @@ section.header.color-a
           'модульних систем
           br
           'smartbox
-        .form
-          p.text-center.uppercase.title-3.color Заповнити заявку
-          p.text-center.bigger
-            'заповніть форму і ми вам
-            br
-            'зателефонуємо
-          - @order = Order.new
-          = simple_form_for @order, url: orders_path,  html: {class: 'form-vertical' } do |f|
-            = f.error_notification
-            = f.input :name, placeholder: 'ваше ім’я', label: false
-            = f.input :phone, placeholder: 'ваш телефон', label: false
-            = f.input :email, placeholder: 'ваш email', type: 'email', label: false
-            = f.button :submit, 'відправити', class: 'btn btn-default uppercase'
+        - @order = Order.new
+        = render 'shared/order_form'
+          
       .col-xs-7.text-right
         = image_tag 'girl.jpg', class: 'img-responsive'

@@ -29,8 +29,24 @@ section {
 	&.color-c {
 		background: #F2F2F2;
 	}
+	&.color-d {
+		background: #FEFCFA;
+	}
+	&.color-e {
+		background: #E4EAED;
+	}
 	.text-white {
 		color: #fff;
+	}
+	&.consultant {
+		background: asset-url('consultant.jpg') top center;
+		padding: 50px 0;
+	}
+	&.evidence {
+		padding: 50px 0;
+	}
+	&.disqount {
+		padding: 50px 0;
 	}
 }
 
@@ -46,6 +62,7 @@ section {
 	padding: 50px 0;
 }
 
+
 #main-navbar {
 	padding: 0;
 	ul {
@@ -54,7 +71,6 @@ section {
 		}
 	}
 }
-
 
 .uppercase {
 	text-transform: uppercase;
@@ -100,8 +116,16 @@ section {
 	font-size: 120%;
 }
 
+.title-big {
+	font-size: 75px !important;
+}
+
+.title-giant {
+	font-size: 100px !important;
+}
+
 .title-1 {
-	font-size: 70px !important;
+	font-size: 65px !important;
 }
 
 .title-2 {
@@ -120,6 +144,11 @@ section {
 	font-size: 18px !important;
 }
 
+
+.badge-red {
+	background: $pink-color;
+	color: #fff;
+}
 
 // For toastr
 .toast-top-full-width {
