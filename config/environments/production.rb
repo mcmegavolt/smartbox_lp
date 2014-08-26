@@ -77,4 +77,23 @@ Smartbox::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+
+  # config.action_mailer.delivery_method = :sendmail
+  # config.action_mailer.sendmail_settings = { :arguments => "-i" }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => 'smartbox.ua' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'evestudio.com.ua',
+    user_name:            'office@evestudio.com.ua',
+    password:             'OFFAdM1nPa88W0rD',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+
+
 end

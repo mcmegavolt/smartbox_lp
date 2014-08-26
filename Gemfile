@@ -36,4 +36,6 @@ gem 'toastr-rails'
 
 group :development do
   gem 'thin'
+  gem 'letter_opener'
+  gem 'letter_opener_web', '~> 1.2.0'
 end
