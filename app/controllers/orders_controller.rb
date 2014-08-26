@@ -5,8 +5,8 @@ class OrdersController < ApplicationController
 			flash[:success] = 'Дякуємо за Вашу заявку! Найближчим часом Вами Вам зателефонуємо.'
     else
       flash[:error] = 'Не вдалося відправити заявку. Перевірте, чи всі поля заповнені та спробуйте ще раз.'
-      redirect_to root_path
     end
+    redirect_to root_url
 	end
 	def order_params
     params.require(:order).permit(:name, :phone, :email)
