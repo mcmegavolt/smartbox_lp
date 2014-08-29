@@ -10,7 +10,7 @@ class OrderMailer < ActionMailer::Base
 
   def manager_notification(order)
     @order = order
-    mail(:to => "web@evestudio.com.ua",
+    mail(:to => "store@smartbox.ua",
          :subject => "Нове замовлення Смарткуб")
   end
 
