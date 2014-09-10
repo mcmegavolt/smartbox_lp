@@ -25,8 +25,6 @@ gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
 
-gem 'letter_opener', :group => :development
-
 gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
