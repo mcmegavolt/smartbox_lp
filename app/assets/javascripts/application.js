@@ -5,3 +5,4 @@
 //= require toastr
 //= require tweenlite
 //= require mightyslider
+//= require custom
